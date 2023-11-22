@@ -1,0 +1,10 @@
+<p>post works!</p>
+
+<h1>{{ fromParent  }}</h1>
+
+<h1>Below Post List</h1>
+<span>{{ title }}</span>
+<!-- [dariPost]='postParentMessage'> -->
+<app-post-list [dariPost]='postParentMessage'></app-post-list>
+
+<button (click)="sendMessage()">This is button!!!</button>
