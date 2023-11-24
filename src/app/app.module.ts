@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
-import { TestComponent } from './test/test.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { EventsHandlingComponent } from './events-handling/events-handling.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TestComponent } from './test/test.component';
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    TestComponent
+    DataBindingComponent,
+    EventsHandlingComponent
   ],
   imports: [
     BrowserModule,

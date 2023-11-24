@@ -1,0 +1,20 @@
+<p>data-binding works!</p>
+
+<!--String Interpolation-->
+<h1>{{ interpolationText }}</h1>
+<h2>{{ interpolationText2 }}</h2>
+
+<!--Property Binding-->
+<img src="{{ propertyBinding }}" alt="no image" />
+<img [src]="propertyBinding" alt="no image" />
+
+<!--Class Binding-->
+<span [class.red-text]="redText">This is red color</span>
+<span [class.blue-text]="blueText">This is red color</span>
+<span [class]="blueText == true ? 'blue-text' : 'red-text'" >Blue false</span> 
+<span class="div-width" [class]="[blueText == true ? 'blue-text' : 'red-text', blueText == true ? 'blue-style' : 'red-style']">Many condition</span>
+
+<!--Style Binding-->
+<span [style.background-color]="redText ? 'red' : 'blue'">True False Condition</span>
+<span style="background-color: orange;">Normal style</span>
+
