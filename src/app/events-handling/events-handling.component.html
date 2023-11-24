@@ -1,1 +1,12 @@
 <p>events-handling works!</p>
+
+<button (click)="buttonClick()">click here!</button>
+
+<input (keyup)="onKeyup($event)" [value]="valueInput"/>
+<p>You typed: {{ valueInput }}</p>
+
+<input (keyup)="onKeyupData(fullname.value)" #fullname [value]="valueInput"/>
+<p>You typed: {{ valueInput }}</p>
+
+<!--2 Way Binding (as understanding, macam model)-->
+<input type="text" [(ngModel)]="twoWayBinding" (keyup)="onKeyupDataElse()">
