@@ -1,0 +1,40 @@
+<p>directives works!</p>
+
+<span> {{ postArray }}</span>
+<button (click)="arrayObj()">Click here</button>
+<div *ngIf="objArray.length < 0, else test">
+    <ul>
+        <li *ngFor="let post of objArray; let i = index">{{ post | json }} {{ post.postTitle }}
+            <span *ngIf="i == 2">Hello</span>
+            <button (click)="onDelete(i)">Delete Row</button>
+        </li>
+        
+    </ul>
+</div>
+<div *ngIf="objArray.length > 0"></div>
+<ng-template #test>dfdf</ng-template>
+
+
+<!--ngSwitchCase-->
+<div>
+    <button (click)="switchCase('step 1')">Step 1</button>
+    <button (click)="switchCase('step 2')">Step 2</button>
+    <button (click)="switchCase('step 3')">Step 3</button>
+</div>
+<span>{{ stepForm }}</span>
+<div [ngSwitch]="stepForm">
+    <div *ngSwitchCase="'step 1'">Step 1 form</div>
+    <div *ngSwitchCase="'step 2'">Step 2 form</div>
+    <div *ngSwitchCase="'step 3'">Step 3 form</div>
+    <div *ngSwitchDefault></div>
+</div>
+
+<!--ngStyles-->
+<span [ngStyle]="{
+    color: isActive ? 'red' : 'purple',
+    textTransform: isActive ? 'uppercase' : 'lowercase'
+}">ngStyles Directives</span>
+
+<!--ngClass-->
+<span [ngClass]="!isActive ? 'isActiveClass' : ''">ngClass Directives</span>
+
