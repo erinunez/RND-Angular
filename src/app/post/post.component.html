@@ -1,9 +1,17 @@
 <p>post works!</p>
 
+<button (click)="addNewData()">Enter</button>
+
 <h1>{{ fromParent  }}</h1>
 
 <h1>Below Post List</h1>
 <span>{{ title }}</span>
+
+<ul>
+    <li *ngFor="let post of listArray">
+        {{ post.postTitle }}
+    </li>
+</ul>
 <!-- [dariPost]='postParentMessage'> -->
 <app-post-list [dariPost]='postParentMessage'></app-post-list>
 

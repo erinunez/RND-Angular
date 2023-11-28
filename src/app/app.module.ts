@@ -6,7 +6,7 @@ import { FormsModule  } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NbThemeModule, NbCardModule } from '@nebular/theme';
-
+import { PostService } from './Services/post.service';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
@@ -44,7 +44,7 @@ import { SummaryPipe } from './pipes/summary.pipe';
     NbThemeModule.forRoot(),
     NbCardModule,
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
