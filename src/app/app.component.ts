@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() { // lepas dom siap
-    console.log(this.childComp.childText)
+    // console.log(this.childComp.childText)
     // this.childMessage = this.childComp
   }
 

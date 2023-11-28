@@ -14,6 +14,11 @@ import { PostListComponent } from './post-list/post-list.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventsHandlingComponent } from './events-handling/events-handling.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+
+import { AppendPipe } from './pipes/append.pipe';
+import { AppendCLIPipe } from './pipes/append-cli.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 
 @NgModule({
@@ -25,6 +30,10 @@ import { DirectivesComponent } from './directives/directives.component';
     DataBindingComponent,
     EventsHandlingComponent,
     DirectivesComponent,
+    PipesComponent,
+    AppendPipe,
+    AppendCLIPipe,
+    SummaryPipe,
   ],
   imports: [
     BrowserModule,
